@@ -90,7 +90,7 @@ export default function EmployeePage() {
           </Typography>
 
           <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <TextField
                 label="Employee ID"
                 name="employeeId"
@@ -100,7 +100,7 @@ export default function EmployeePage() {
               />
             </Grid>
 
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <TextField
                 label="Full Name"
                 name="fullName"
@@ -110,7 +110,7 @@ export default function EmployeePage() {
               />
             </Grid>
 
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <TextField
                 label="Email"
                 name="email"
@@ -120,7 +120,7 @@ export default function EmployeePage() {
               />
             </Grid>
 
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <TextField
                 label="Department"
                 name="department"
@@ -177,7 +177,7 @@ export default function EmployeePage() {
                         color="error"
                         variant="outlined"
                         size="small"
-                        onClick={() => handleDelete(emp.employee_id)}
+                        onClick={() => handleDelete(emp.employeeId)}
                       >
                         Delete
                       </Button>

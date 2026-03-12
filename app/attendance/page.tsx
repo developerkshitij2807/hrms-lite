@@ -70,7 +70,7 @@ export default function AttendancePage() {
 
           <Grid container spacing={2}>
 
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <TextField
                 label="Employee ID"
                 name="employeeId"
@@ -80,7 +80,7 @@ export default function AttendancePage() {
               />
             </Grid>
 
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <TextField
                 type="date"
                 label="Date"
@@ -92,7 +92,7 @@ export default function AttendancePage() {
               />
             </Grid>
 
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <TextField
                 select
                 label="Status"
